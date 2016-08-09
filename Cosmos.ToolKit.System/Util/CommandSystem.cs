@@ -11,15 +11,15 @@ namespace Cosmos.ToolKit.System.Util
 
         public List<CommandBase> Commands;
 
-        public CommandSystem() { }
-
+       
         /// <summary>
         /// 
         /// </summary>
         /// <param name="LoadCommon">If True will add common command's</param>
-        public CommandSystem(bool LoadCommon)
+        public CommandSystem(bool LoadCommon = false)
         {
-            if (LoadCommon) { loadCommon(); }
+            if (LoadCommon)
+                loadCommon(); 
         }
 
         private void loadCommon()
@@ -27,6 +27,10 @@ namespace Cosmos.ToolKit.System.Util
 
         }
 
+        /// <summary>
+        /// Parse's Commands
+        /// </summary>
+        /// <param name="text">The Command you want to Parse</param>
         public void Parse(string text)
         {
             try
@@ -82,9 +86,9 @@ namespace Cosmos.ToolKit.System.Util
                 Item.Replace("\t", "    ");
                 Item.Replace("\v", Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine);
 
-                Item.Replace("/n", Environment.NewLine);
-                Item.Replace("/t", "    ");
-                Item.Replace("/v", Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine);
+                //Item.Replace("/n", Environment.NewLine);
+                //Item.Replace("/t", "    ");
+                //Item.Replace("/v", Environment.NewLine + Environment.NewLine + Environment.NewLine + Environment.NewLine);
 
                 Console.Write(Item + " ");
 

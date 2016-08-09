@@ -1,0 +1,15 @@
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.ToolKit.Graphics.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.ToolKit.Graphics.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Common.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.HAL.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.System.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Debug.Kernel.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Core.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Common.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.HAL.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.System.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Debug.Kernel.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\bin\Debug\Cosmos.Core.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\obj\Debug\Cosmos.ToolKit.Graphics.csprojResolveAssemblyReference.cache
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\obj\Debug\Cosmos.ToolKit.Graphics.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Graphics\obj\Debug\Cosmos.ToolKit.Graphics.pdb

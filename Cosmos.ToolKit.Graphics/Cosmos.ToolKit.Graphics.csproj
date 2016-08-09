@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="FontManger.cs" />
+    <Compile Include="Fonts\BasicFont.cs" />
     <Compile Include="GFXManger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

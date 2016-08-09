@@ -1,25 +1,19 @@
-﻿
-
-namespace Cosmos.ToolKit.Math.Graphics
+﻿namespace Cosmos.ToolKit.Math.Graphics
 {
     public static class Shapes
     {
 
         public static byte[] Box(byte[] GBuffer, int x, int y, int width, int height, int colour)
         {
-            int xx = x;
-            int yy = y;
-            while (yy <= y + height)
+
+            for (int yy = y; yy < y + height; yy++)
             {
 
-                while (xx <= x + width)
+                for (int xx = x; xx < x + width; xx++)
                 {
-
                     GBuffer[xx + (yy * 320)] = (byte)colour;
-                    xx++;
-
                 }
-                yy++;
+
             }
 
             return GBuffer;

@@ -1,0 +1,5 @@
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Math\bin\Debug\Cosmos.ToolKit.Math.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Math\bin\Debug\Cosmos.ToolKit.Math.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Math\obj\Debug\Cosmos.ToolKit.Math.dll
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Math\obj\Debug\Cosmos.ToolKit.Math.pdb
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Math\obj\Debug\Cosmos.ToolKit.Math.csprojResolveAssemblyReference.cache

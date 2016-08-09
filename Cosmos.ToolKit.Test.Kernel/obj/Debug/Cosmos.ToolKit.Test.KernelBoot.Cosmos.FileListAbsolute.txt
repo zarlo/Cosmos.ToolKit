@@ -1,0 +1,1 @@
+C:\Users\kaleb\Desktop\DEV\zarlo\Cosmos.ToolKit\Cosmos.ToolKit.Test.Kernel\obj\Debug\Cosmos.ToolKit.Test.KernelBoot.CosmosResolveAssemblyReference.cache

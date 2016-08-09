@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cosmos.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ae71220097cb983, processorArchitecture=MSIL" />
+    <Reference Include="Cosmos.HAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ae71220097cb983, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -48,6 +49,10 @@
     <ProjectReference Include="..\Cosmos.ToolKit.Graphics\Cosmos.ToolKit.Graphics.csproj">
       <Project>{cd3627e2-52c7-4426-8e1b-ad8955f2f121}</Project>
       <Name>Cosmos.ToolKit.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cosmos.ToolKit.Math\Cosmos.ToolKit.Math.csproj">
+      <Project>{a8b458a1-ae18-4425-8744-ce9126c23dcd}</Project>
+      <Name>Cosmos.ToolKit.Math</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cosmos.ToolKit.System\Cosmos.ToolKit.System.csproj">
       <Project>{5beda29c-fb8d-4502-a781-6b73c9a4eca9}</Project>

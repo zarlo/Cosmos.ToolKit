@@ -5,7 +5,7 @@ using Cosmos.Common;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: Ring(Ring.HAL)]
+[assembly: Ring(Ring.System)]
 [assembly: AssemblyTitle("Cosmos.ToolKit.Graphics")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
