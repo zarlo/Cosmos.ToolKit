@@ -27,6 +27,20 @@ namespace Cosmos.ToolKit.System.Util
 
         }
 
+        public void overrideCommand(string Command , CommandBase comm)
+        {
+
+            for (int i = 0; i < Commands.Count; i++)
+            {
+                if (Command.ToLower() == Commands[i].Name)
+                {
+                     Commands[i] = comm;
+                    break;
+                }
+            }
+
+        }
+
         /// <summary>
         /// Parse's Commands
         /// </summary>

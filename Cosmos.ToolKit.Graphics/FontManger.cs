@@ -38,6 +38,7 @@ namespace Cosmos.ToolKit.Graphics
 
         public void renderChar(int x, int y, char c, int color)
         {
+            
             int[] charArray = font.getChar(c);
             for (int i = 0; i < font.fontSize(); i++)
             {
@@ -53,6 +54,7 @@ namespace Cosmos.ToolKit.Graphics
 
         public void renderString(int x, int y, string text, int color, int gap = 2, int nlgap = 2)
         {
+            
             int wx = x;
             int wy = y;
             char[] t = text.ToCharArray();
