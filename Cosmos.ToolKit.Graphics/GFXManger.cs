@@ -67,8 +67,8 @@ namespace Cosmos.ToolKit.Graphics
             Font = new FontManger(this);
             //Font.font[0] = new Fonts.BasicFont();
             this.DrawText(0, 5, "Powered by the C# Open Source ");
-            this.DrawText(0, 15, "Managed Operating System.");
-            this.DrawText(0, 25, "and the cosmos tookit");
+            this.DrawText(0, 15, "Managed Operating System");
+            this.DrawText(0, 25, "and the cosmos tookit.");
             this.Tick();
         }
 
