@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEnCoder", "FileEnCoder\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Common", "Cosmos.ToolKit.Common\Cosmos.ToolKit.Common.csproj", "{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{9900D856-EC82-4716-81C8-ACDB8E138BFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

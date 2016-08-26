@@ -2,12 +2,14 @@
 {
     public class BasicFont : Font
     {
-        public override int fontSize()
+        public string Name { get { return "BasicFont"; } } 
+
+        public int fontSize()
         {
             return 5;
         }
 
-        public override int[] getChar(char c)
+        public int[] getChar(char c)
         {
             string temp = c.ToString();
             c = temp.ToUpper().ToCharArray()[0];

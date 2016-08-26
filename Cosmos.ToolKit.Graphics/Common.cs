@@ -3,16 +3,17 @@ using System;
 
 namespace Cosmos.ToolKit.Graphics.Common
 {
-    // Pixel class not used
+    
     public class Pixel
     {
         public int X { get; private set; }
         public int Y { get; private set; }
         public int Colour { get; set; }
-        public Pixel(int x, int y)
+        public Pixel(int x, int y, int colour)
         {
             X = x;
             Y = y;
+            Colour = colour;
         }
 
     }

@@ -12,7 +12,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <Profile>VMware</Profile>
-    <DebugEnabled>True</DebugEnabled>
+    <DebugEnabled>False</DebugEnabled>
     <DebugMode>Source</DebugMode>
     <TraceMode>User</TraceMode>
     <EnableGDB>False</EnableGDB>
@@ -29,7 +29,7 @@
     <VMware_Description>Use VMware Player or Workstation to deploy and debug.</VMware_Description>
     <VMware_Deployment>ISO</VMware_Deployment>
     <VMware_Launch>VMware</VMware_Launch>
-    <VMware_DebugEnabled>True</VMware_DebugEnabled>
+    <VMware_DebugEnabled>False</VMware_DebugEnabled>
     <VMware_DebugMode>Source</VMware_DebugMode>
     <VMware_VisualStudioDebugPort>Pipe: Cosmos\Serial</VMware_VisualStudioDebugPort>
     <VMware_PxeInterface>192.168.56.1</VMware_PxeInterface>
@@ -37,6 +37,18 @@
     <VMware_OutputPath>bin\Debug\</VMware_OutputPath>
     <VMware_EnableGDB>False</VMware_EnableGDB>
     <VMware_StartCosmosGDB>false</VMware_StartCosmosGDB>
+    <ISO_Name>Cosmos.ToolKit.Test.KernelBoot</ISO_Name>
+    <ISO_Description>Creates a bootable ISO image which can be burned to a DVD. After running the selected project, an explorer window will open containing the ISO file. The ISO file can then be burned to a CD or DVD and used to boot a physical or virtual system.</ISO_Description>
+    <ISO_Deployment>ISO</ISO_Deployment>
+    <ISO_Launch>None</ISO_Launch>
+    <ISO_DebugEnabled>False</ISO_DebugEnabled>
+    <ISO_DebugMode>Source</ISO_DebugMode>
+    <ISO_VisualStudioDebugPort>Pipe: Cosmos\Serial</ISO_VisualStudioDebugPort>
+    <ISO_PxeInterface>192.168.56.1</ISO_PxeInterface>
+    <ISO_VMwareEdition>Player</ISO_VMwareEdition>
+    <ISO_OutputPath>bin\Debug\</ISO_OutputPath>
+    <ISO_EnableGDB>False</ISO_EnableGDB>
+    <ISO_StartCosmosGDB>false</ISO_StartCosmosGDB>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Cosmos.Core.Plugs, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5ae71220097cb983" />

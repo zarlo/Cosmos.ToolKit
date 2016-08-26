@@ -1,14 +1,26 @@
 ﻿using Cosmos.HAL.Drivers;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Cosmos.ToolKit.Graphics
 {
+
+
     public enum GFXType
     {
         VBE,
         VGA,
         Null
     }
+
+    public enum ScreenSize
+    {
+        Size320x200x8,
+        Size320x200x4,
+        Size320x200x2
+    }
+
     public class GFXManger
     {
 
@@ -22,18 +34,17 @@ namespace Cosmos.ToolKit.Graphics
         public FontManger Font { get; set; }
 
         public bool Buffered { get; set; }
-        public byte[] Buffer = new byte[320 * 200];
-        public byte[] Bufferold = new byte[320 * 200];
-
-        private int setto;
+        public List<Common.Pixel> Buffer = new List<Common.Pixel>();
+        
 
         public int Colors()
         {
             if (Type == GFXType.VGA) {
                 return m_VGA.Colors;
             }
-            return 1;
+            return 2^32;
         }
+
 
 
         public GFXManger(GFXType type)
@@ -65,34 +76,42 @@ namespace Cosmos.ToolKit.Graphics
         {
             this.Buffered = true;
             Font = new FontManger(this);
-            //Font.font[0] = new Fonts.BasicFont();
-            this.DrawText(0, 5, "Powered by the C# Open Source ");
-            this.DrawText(0, 15, "Managed Operating System");
-            this.DrawText(0, 25, "and the cosmos tookit.");
-            this.Tick();
+            
+            
         }
 
         public void Tick()
         {
             if (Buffered)
             {
+                this.Clear();
+                foreach (Common.Pixel Item in Buffer)
+                {
+
+                    RealSetPixel(Item.X,Item.Y,Item.Colour);
+
+                }
+
+                Buffer = new List<Graphics.Common.Pixel>();
+
                 //if (Bufferold != Buffer)
                 //{
-                this.Clear();
-                for (int y = 0; y < height; y++)
-                {
-                    for (int x = 0; x < width; x++)
-                    {
-                        RealSetPixel(x, y, Buffer[x + (y * 320)]);
-                        if (x + (y * 320) == setto)
-                        {
-                            Bufferold = Buffer;
-                            Buffer = new byte[320 * 200];
-                            setto = 0;
-                            break;
-                        }
-                    }
-                }
+                //this.Clear();
+
+                //for (int y = 0; y < height; y++)
+                //{
+                //for (int x = 0; x < width; x++)
+                //{
+                //RealSetPixel(x, y, Buffer[x + (y * 320)]);
+                //if (x + (y * 320) == setto)
+                //{
+                //    Bufferold = Buffer;
+                //    Buffer = new byte[320 * 200];
+                //    setto = 0;
+                //    break;
+                //}
+                //}
+                //}
                 // }
                 //Buffer = new byte[320 * 200];
 
@@ -107,6 +126,7 @@ namespace Cosmos.ToolKit.Graphics
                     RealSetPixel(x, y, 0);
                 }
             }
+            
         }
 
         private void RealSetPixel(int x, int y, int c)
@@ -125,10 +145,8 @@ namespace Cosmos.ToolKit.Graphics
         {
             if (Buffered)
             {
-                Buffer[x + (y * 320)] = (byte)c;
-                if (x + (y * 320) > setto)
-                    setto = x + (y * 320);
-
+                Buffer.Add(new Common.Pixel( x , y,c));
+               
             }
             else
             {
@@ -138,8 +156,6 @@ namespace Cosmos.ToolKit.Graphics
 
         public void SetPaletteFromFile(string File)
         {
-
-
 
         }
 
@@ -159,10 +175,10 @@ namespace Cosmos.ToolKit.Graphics
             }
         }
 
-        public void DrawText(int x, int y, string Text)
+        public void DrawText(int x, int y, string Text, string FontName = "BasicFont")
         {
 
-            Font.renderString(x, y, Text);
+            Font.renderString(x, y, Text,FontName);
 
         }
 

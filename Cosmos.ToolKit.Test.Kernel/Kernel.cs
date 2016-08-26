@@ -23,7 +23,7 @@ namespace Cosmos.ToolKit.Test.Kernel
             GFX.DrawText(0, 25, "abcdefghijklnmopqrstuvwxyz1234567890\n<>.,\"';:[]#//!");
             GFX.DrawText(0, 40, "cosmos.toolkit !!test!!");
             GFX.DrawText(0, 50, Console.ReadLine());
-
+            GFX.DrawText(50,10, GFX.Buffer.Count.ToString());
             
             
             //GFX.Clear();
