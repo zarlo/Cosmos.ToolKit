@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Core", "Cosmos.ToolKit.Core\Cosmos.ToolKit.Core.csproj", "{7A066CFE-4BF8-43D2-8B00-E6EE52698DCC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.Core", "kozit.ToolKit.Core\kozit.ToolKit.Core.csproj", "{7A066CFE-4BF8-43D2-8B00-E6EE52698DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Math", "Cosmos.ToolKit.Math\Cosmos.ToolKit.Math.csproj", "{A8B458A1-AE18-4425-8744-CE9126C23DCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.Math", "kozit.ToolKit.Math\kozit.ToolKit.Math.csproj", "{A8B458A1-AE18-4425-8744-CE9126C23DCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Graphics", "Cosmos.ToolKit.Graphics\Cosmos.ToolKit.Graphics.csproj", "{CD3627E2-52C7-4426-8E1B-AD8955F2F121}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.Graphics", "kozit.ToolKit.Graphics\kozit.ToolKit.Graphics.csproj", "{CD3627E2-52C7-4426-8E1B-AD8955F2F121}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.System", "Cosmos.ToolKit.System\Cosmos.ToolKit.System.csproj", "{5BEDA29C-FB8D-4502-A781-6B73C9A4ECA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.System", "kozit.ToolKit.System\kozit.ToolKit.System.csproj", "{5BEDA29C-FB8D-4502-A781-6B73C9A4ECA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Test.Kernel", "Cosmos.ToolKit.Test.Kernel\Cosmos.ToolKit.Test.Kernel.csproj", "{A82ED11F-903C-44C9-B9F8-EE6C128CF1B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Test.Kernel", "kozit.ToolKit.Test.Kernel\Cosmos.ToolKit.Test.Kernel.csproj", "{A82ED11F-903C-44C9-B9F8-EE6C128CF1B0}"
 EndProject
-Project("{471EC4BB-E47E-4229-A789-D1F5F83B52D4}") = "Cosmos.ToolKit.Test.KernelBoot", "Cosmos.ToolKit.Test.Kernel\Cosmos.ToolKit.Test.KernelBoot.Cosmos", "{8E5FDF28-3663-4498-A650-32DF9BB49099}"
+Project("{471EC4BB-E47E-4229-A789-D1F5F83B52D4}") = "Cosmos.ToolKit.Test.KernelBoot", "kozit.ToolKit.Test.Kernel\Cosmos.ToolKit.Test.KernelBoot.Cosmos", "{8E5FDF28-3663-4498-A650-32DF9BB49099}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B33C33DA-1149-4C2F-AC32-6E4E8AE25923}"
 EndProject
@@ -21,9 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{B0D785F1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileEnCoder", "FileEnCoder\FileEnCoder.csproj", "{7876EE26-5B12-480F-B45E-39C3A755DC06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.ToolKit.Common", "Cosmos.ToolKit.Common\Cosmos.ToolKit.Common.csproj", "{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.Common", "kozit.ToolKit.Common\kozit.ToolKit.Common.csproj", "{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{9900D856-EC82-4716-81C8-ACDB8E138BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kozit.ToolKit.HAL", "kozit.ToolKit.HAL\kozit.ToolKit.HAL.csproj", "{3A0CB2F0-9B89-464F-9274-4BC9590D6548}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,14 @@ Global
 		{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}.Release|x86.ActiveCfg = Release|Any CPU
 		{AE6163C3-AFF4-44B1-92E0-6B8FED9781C4}.Release|x86.Build.0 = Release|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Debug|x86.Build.0 = Debug|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Release|x86.ActiveCfg = Release|Any CPU
+		{3A0CB2F0-9B89-464F-9274-4BC9590D6548}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
